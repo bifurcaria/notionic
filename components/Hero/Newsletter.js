@@ -37,7 +37,7 @@ const NewsletterHero = ({ blockMap }) => {
 
           <div className='flex flex-col sm:flex-row sm:justify-center gap-4'>
             <Link passHref href={BLOG.telegramChannelUrl} scroll={false} className='flex'>
-              <button className='w-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 inline-flex py-3 px-5 rounded-lg items-center'>
+              <button className='w-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200/50 dark:hover:bg-gray-600 inline-flex py-3 px-5 rounded-lg items-center'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='currentColor'
@@ -58,7 +58,7 @@ const NewsletterHero = ({ blockMap }) => {
             {showCopied ? (
               <button
                 disabled
-                className='bg-gray-200 dark:bg-gray-600 inline-flex py-3 px-5 rounded-lg items-center'
+                className='bg-gray-200/50 dark:bg-gray-600 inline-flex py-3 px-5 rounded-lg items-center'
               >
                 <ClipboardCheckIcon className='inline-block text-gray-600 dark:text-day h-7 w-7' />
                 <span className='ml-4 flex items-start flex-col leading-none'>
@@ -71,7 +71,7 @@ const NewsletterHero = ({ blockMap }) => {
             ) : (
               <button
                 onClick={() => clickCopy()}
-                className='bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 inline-flex py-3 px-5 rounded-lg items-center'
+                className='bg-gray-100 dark:bg-gray-700 hover:bg-gray-200/50 dark:hover:bg-gray-600 inline-flex py-3 px-5 rounded-lg items-center'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

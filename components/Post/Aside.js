@@ -69,7 +69,7 @@ const Aside = ({ pageTitle, blockMap, frontMatter }) => {
       {showScrollElement && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className='md:hidden fixed inline-flex bottom-5 right-5 p-2 rounded-lg z-10 shadow bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600'
+          className='md:hidden fixed inline-flex bottom-5 right-5 p-2 rounded-lg z-10 shadow bg-gray-200/50 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600'
         >
           <ArrowUpIcon className='text-gray-600 dark:text-day w-5 h-5' />
         </button>
