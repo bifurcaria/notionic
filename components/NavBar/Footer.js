@@ -74,9 +74,9 @@ const Footer = ({ fullWidth }) => {
                     <li key={link.id}
                       className={`${
                         activeMenu === link.to
-                          ? 'bg-gray-200 dark:bg-gray-700'
+                          ? 'bg-gray-200/50 dark:bg-gray-700'
                           : ''
-                      } hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer rounded-lg block py-1 px-2 nav`}
+                      } hover:bg-gray-200/50 dark:hover:bg-gray-700 cursor-pointer rounded-lg block py-1 px-2 nav`}
                     >
                       <div className='font-light'>
                         {link.icon}
