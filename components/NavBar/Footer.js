@@ -60,12 +60,12 @@ const Footer = ({ fullWidth }) => {
 
   return (
     <motion.div
-      className={`mt-6 flex-shrink-0 m-auto w-full text-gray-600 dark:text-gray-300 transition-all ${
+      className={`mt-6 flex-shrink-0 m-auto w-full text-neutral-600 dark:text-neutral-300 transition-all ${
         !fullWidth ? 'max-w-3xl md:px-8' : 'px-4 md:px-24'
       }`}
     >
       <footer className='max-w-screen-2xl px-4 md:px-8 mx-auto'>
-        <div className='flex flex-col md:flex-row justify-between items-center border-b dark:border-gray-600 py-1'>
+        <div className='flex flex-col md:flex-row justify-between items-center border-b dark:border-neutral-600 py-1'>
           <ul className='flex flex-wrap justify-center md:justify-start md:gap-1'>
             {links.map(
               (link) =>
@@ -74,9 +74,9 @@ const Footer = ({ fullWidth }) => {
                     <li key={link.id}
                       className={`${
                         activeMenu === link.to
-                          ? 'bg-gray-200/50 dark:bg-gray-700'
+                          ? 'bg-neutral-200/50 dark:bg-neutral-700'
                           : ''
-                      } hover:bg-gray-200/50 dark:hover:bg-gray-700 cursor-pointer rounded-lg block py-1 px-2 nav`}
+                      } hover:bg-neutral-200/50 dark:hover:bg-neutral-700 cursor-pointer rounded-lg block py-1 px-2 nav`}
                     >
                       <div className='font-light'>
                         {link.icon}
@@ -92,7 +92,7 @@ const Footer = ({ fullWidth }) => {
           </div>
         </div>
 
-        <div className='text-gray-400 text-xs font-light py-4'>
+        <div className='text-neutral-400 text-xs font-light py-4'>
           © {from === y || !from ? y : `${from} - ${y}`} | {BLOG.author}
           <p className='md:float-right'>
             {t.FOOTER.COPYRIGHT_START}

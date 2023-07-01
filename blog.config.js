@@ -7,19 +7,19 @@ const BLOG = {
   description: 'Revista de Investigadoras',
   lang: 'es-ES', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
-  appearance: 'light', // ['light', 'dark', 'auto'],
+  appearance: 'dark', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
-  lightBackground: '#d8bac1', // use hex value, don't forget '#' e.g #fffefc
-  darkBackground: '#212936', // use hex value, don't forget '#'
+  lightBackground: '#d1abb4', // use hex value, don't forget '#' e.g #fffefc
+  darkBackground: '#141414', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Notionic in a folder
   since: 2022, // If leave this empty, current year will be used.
   postsPerPage: 10,
   sortByDate: true,
   pagesShow: {
     newsletter: false,
-    notes: true,
+    notes: false,
     projects: true,
-    contact: true,
+    contact: false,
     books: false,
     friends: false
   },
@@ -29,9 +29,10 @@ const BLOG = {
   ogImageGenerateHost: 'og-zl.vercel.app', // The link to generate OG image, don't end with a slash
   defaultCover: '/cover.jpg',
   socialLink: {
-    twitter: 'https://twitter.com/izuolan',
-    github: 'https://github.com/izuolan',
-    telegram: 'https://t.me/zuolan'
+    twitter: 'https://twitter.com/revistaelena',
+    instagram: 'https://instagram.com/elenapublicaciones',
+    github: 'https://github.com/',
+    telegram: 'https://t.me/'
   },
   seo: {
     keywords: ['Notionic', 'Zuolan', 'Blog'],

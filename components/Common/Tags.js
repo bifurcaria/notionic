@@ -10,10 +10,10 @@ const Tags = ({ tags, currentTag }) => {
           return (
             <div
               key={key}
-              className={`m-1 font-medium rounded-lg whitespace-nowrap hover:text-gray-100 dark:text-gray-300 hover:bg-gray-400 dark:hover:bg-gray-600 ${
+              className={`m-1 font-medium rounded-lg whitespace-nowrap hover:text-neutral-100 dark:text-neutral-300 hover:bg-neutral-400 dark:hover:bg-neutral-600 ${
                 selected
-                  ? 'text-gray-100 bg-gray-400 dark:bg-gray-600'
-                  : 'text-gray-400 bg-gray-100 dark:bg-night'
+                  ? 'text-neutral-100 bg-neutral-400 dark:bg-neutral-600'
+                  : 'text-neutral-400 bg-neutral-100 dark:bg-night'
               }`}
             >
               <Link key={key} scroll={false}

@@ -18,7 +18,7 @@ export default function Content (props) {
           passHref
           href={`${BLOG.path}/${frontMatter.slug}`}
           scroll={false}
-          className='block md:-ml-6 mb-2 text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300'
+          className='block md:-ml-6 mb-2 text-neutral-500 hover:text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-300'
         >
           <ChevronLeftIcon className='inline-block mb-1 h-5 w-5' />
           <span className='m-1'>{frontMatter.title}</span>
@@ -28,7 +28,7 @@ export default function Content (props) {
         {pageTitle ? pageTitle : frontMatter.title}
       </h1>
       {frontMatter.type[0] !== 'Page' && (
-        <nav className='flex mt-5 mb-10 items-start text-gray-500 dark:text-gray-400'>
+        <nav className='flex mt-5 mb-10 items-start text-neutral-500 dark:text-neutral-400'>
           <div className='mr-2 mb-4 md:ml-0'>
             <FormattedDate date={frontMatter.date} />
           </div>

@@ -77,8 +77,8 @@ const NavBar = () => {
               <Link passHref href={link.to} key={link.id} scroll={false}>
                 <li
                   className={`${
-                    activeMenu === link.to ? 'bg-gray-200/50 dark:bg-gray-700' : ''
-                  } hover:bg-gray-200/50 dark:hover:bg-gray-700 cursor-pointer rounded-lg block py-1 px-2 nav`}
+                    activeMenu === link.to ? 'bg-neutral-200/50 dark:bg-neutral-700' : ''
+                  } hover:bg-neutral-200/50 dark:hover:bg-neutral-700 cursor-pointer rounded-lg block py-1 px-2 nav`}
                 >
                   <div className='font-light'>
                     {link.icon}
@@ -93,7 +93,7 @@ const NavBar = () => {
 
       <div className='nav-func-btn block'>
         <ThemeSwitcher />
-        <LangSwitcher />
+       {/*  <LangSwitcher /> */}
       </div>
 
       {/* Mobile Phone Menu */}
@@ -101,12 +101,12 @@ const NavBar = () => {
         <button
           type='button' aria-label='Menu'
           onClick={() => setShowMenu((showMenu) => !showMenu)}
-          className='hover:bg-gray-200/50 dark:hover:bg-gray-700 cursor-pointer rounded-lg block p-2 -mr-3 md:pb-3'
+          className='hover:bg-neutral-200/50 dark:hover:bg-neutral-700 cursor-pointer rounded-lg block p-2 -mr-3 md:pb-3'
         >
           <MenuIcon className='inline-block mb-1 h-5 w-5' />
         </button>
         {showMenu && (
-          <div className='absolute right-0 w-40 mr-4 mt-2 bg-white dark:bg-gray-700 divide-y divide-gray-200/50 dark:divide-gray-600 rounded-md shadow-lg outline-none'>
+          <div className='absolute right-0 w-40 mr-4 mt-2 bg-white dark:bg-neutral-700 divide-y divide-neutral-200/50 dark:divide-neutral-600 rounded-md shadow-lg outline-none'>
             <div className='py-1'>
               {links.map(
                 (link) =>
@@ -114,7 +114,7 @@ const NavBar = () => {
                     <Link passHref key={link.id} href={link.to} scroll={false}>
                       <button
                         onClick={() => setShowMenu((showMenu) => !showMenu)}
-                        className='text-left hover:bg-gray-100 dark:hover:bg-gray-600 font-light block justify-between w-full px-4 py-2 leading-5'
+                        className='text-left hover:bg-neutral-100 dark:hover:bg-neutral-600 font-light block justify-between w-full px-4 py-2 leading-5'
                       >
                         {link.icon}
                         <span className='m-1'>{link.name}</span>
@@ -175,7 +175,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
         <div className='flex items-center'>
           <Link passHref href='/' scroll={false} aria-label={BLOG.title}>
             <motion.div>
-              <Logo className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current' />
+            <Logo className='h-6 text-neutral-900 hover:text-neutral-700/75 dark:text-rose-200/80 dark:hover:text-neutral-600/75 fill-current' />
             </motion.div>
           </Link>
           {navBarTitle ? (

@@ -9,7 +9,7 @@ export const Contact = () => {
   const t = lang[locale]
   return (
     <Container title={BLOG.title} description={BLOG.description}>
-      <div className='mb-8 md:mb-16 text-gray-600 dark:text-gray-200/50'>
+      <div className='mb-8 md:mb-16 text-neutral-600 dark:text-neutral-200/50'>
         <h2 className='text-xl lg:text-3xl font-light text-center mb-4'>
           {t.CONTACT.TITLE}
         </h2>

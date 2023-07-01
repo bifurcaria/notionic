@@ -30,11 +30,11 @@ const SearchLayout = ({ tags, posts, currentTag }) => {
               ? `${t.SEARCH.ONLY_SEARCH} #${currentTag}`
               : `${t.SEARCH.PLACEHOLDER}`
           }
-          className='w-full bg-white dark:bg-gray-600 shadow-md rounded-lg outline-none focus:shadow p-3'
+          className='w-full bg-white dark:bg-neutral-600 shadow-md rounded-lg outline-none focus:shadow p-3'
           onChange={(e) => setSearchValue(e.target.value)}
         />
         <svg
-          className='absolute right-3 top-3 h-5 w-5 text-gray-400'
+          className='absolute right-3 top-3 h-5 w-5 text-neutral-400'
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
           viewBox='0 0 24 24'
@@ -51,7 +51,7 @@ const SearchLayout = ({ tags, posts, currentTag }) => {
       <Tags tags={tags} currentTag={currentTag} />
       <div className='article-container my-8'>
         {!filteredBlogPosts.length && (
-          <p className='text-gray-500 dark:text-gray-300'>
+          <p className='text-neutral-500 dark:text-neutral-300'>
             {t.SEARCH.NOT_FOUND}
           </p>
         )}
